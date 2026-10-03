@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calitest Laboratory | Calibration Services</title>
+<meta name="description" content="Calitest Laboratory provides professional calibration services, on-site calibration, and traceable calibration certificates. Contact 0300 8019017.">
+
+<style>
+:root{
+  --navy:#071b33;--blue:#0877c9;--cyan:#13b8c8;--ink:#182b3d;
+  --muted:#627386;--bg:#f5f9fc;--line:#dce8f1;--white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65;background:var(--white)}
+header{background:rgba(7,27,51,.96);color:#fff;padding:17px 6%;position:sticky;top:0;z-index:20;box-shadow:0 4px 25px #071b3330}
+nav{display:flex;align-items:center;justify-content:space-between;gap:25px;max-width:1200px;margin:auto}
+.logo{font-size:23px;font-weight:800;letter-spacing:.8px}.logo span{display:block;font-size:10px;letter-spacing:2.3px;color:#9ddfe7;margin-top:1px}
+nav a{color:#e9f4fb;text-decoration:none;margin-left:22px;font-size:14px;font-weight:600}
+nav a:hover{color:#5ce0e7}
+.hero{min-height:640px;padding:100px 6%;display:flex;align-items:center;position:relative;overflow:hidden;background:
+radial-gradient(circle at 80% 25%,#19b8c83b 0 120px,transparent 121px),
+linear-gradient(125deg,#f7fbfe 0%,#eaf5fb 55%,#dff4f5 100%)}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid #0877c925;border-radius:50%;right:-170px;bottom:-220px}
+.hero-inner{max-width:1200px;width:100%;margin:auto;position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#0877c9;font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+.eyebrow:before{content:"";width:28px;height:2px;background:var(--cyan)}
+h1{font-size:clamp(44px,6vw,72px);line-height:1.02;color:var(--navy);margin:18px 0 20px;max-width:760px;letter-spacing:-2px}
+.hero p{font-size:19px;max-width:700px;color:#526578}
+.badges{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.badge{background:#fff;border:1px solid #d5e5ee;border-radius:30px;padding:9px 15px;font-size:13px;font-weight:700;box-shadow:0 5px 18px #0877c90b}
+.buttons{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:800;transition:.2s}
+.primary{background:var(--blue);color:#fff;box-shadow:0 8px 20px #0877c933}.primary:hover{transform:translateY(-2px);background:#0669ad}
+.secondary{border:1px solid #9bb8cc;color:var(--navy);background:#fff}
+section{padding:82px 6%}
+section:nth-child(even){background:var(--bg)}
+.section-title{text-align:center;max-width:780px;margin:0 auto 46px}
+.section-title h2{font-size:36px;line-height:1.15;color:var(--navy);margin-bottom:12px;letter-spacing:-.5px}
+.section-title p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;max-width:1120px;margin:auto}
+.card{background:#fff;padding:28px;border-radius:14px;border:1px solid var(--line);box-shadow:0 8px 30px #071b3310;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 35px #071b3318}
+.card h3{color:var(--navy);margin-bottom:8px;font-size:19px}.card p{color:#66798a;font-size:14px}
+.icon{width:52px;height:52px;display:grid;place-items:center;border-radius:12px;background:#e7f7fa;color:#0877c9;font-size:25px;margin-bottom:18px}
+.about-wrap{max-width:1050px;margin:auto;display:grid;grid-template-columns:1.4fr .8fr;gap:25px;align-items:stretch}
+.about{font-size:17px;color:#53687a;background:#fff;border:1px solid var(--line);border-radius:14px;padding:34px;box-shadow:0 8px 30px #071b3310}
+.stats{display:grid;gap:15px}.stat{background:var(--navy);color:#fff;border-radius:14px;padding:25px}.stat strong{display:block;font-size:30px;color:#62dbe2}.stat span{font-size:13px;color:#c7d7e5}
+.highlight{background:linear-gradient(120deg,#071b33,#0b4f7c);color:#fff;border-radius:20px;padding:48px;max-width:1120px;margin:auto;position:relative;overflow:hidden}
+.highlight:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #ffffff22;border-radius:50%;right:-80px;top:-100px}
+.highlight h2{font-size:34px;margin-bottom:10px}.highlight p{max-width:760px;color:#d4e4ee}
+.contact-grid{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.contact-box{padding:23px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.contact-box strong{display:block;color:var(--navy);margin-bottom:6px;font-size:13px;text-transform:uppercase;letter-spacing:.8px}
+.contact-box a{color:var(--blue);font-weight:700;text-decoration:none}
+.cta{text-align:center;margin-top:35px}
+footer{background:#06172c;color:#9eb2c4;text-align:center;padding:38px 6%}
+footer strong{color:#fff;letter-spacing:1px}
+@media(max-width:760px){
+  nav a{display:none}.hero{min-height:600px;padding:75px 7%}h1{font-size:46px;letter-spacing:-1px}
+  section{padding:62px 7%}.about-wrap{grid-template-columns:1fr}.highlight{padding:34px 26px}
+}
+</style>
+
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">CALITEST LABORATORY<span>PRECISION • RELIABILITY • TRACEABILITY</span></div>
+<div><a href="#about">About</a><a href="#services">Services</a><a href="#onsite">On-Site</a><a href="#contact">Contact</a></div>
+</nav>
+</header>
+
+<main>
+<section class="hero">
+<div class="hero-inner">
+<div class="eyebrow">Established in 1999 • Professional Calibration Services</div>
+<h1>Precision measurement.<br>Trusted calibration.</h1>
+<p>Calitest Laboratory provides professional calibration services for industrial, commercial and laboratory measuring instruments, with a focus on reliable results, documentation and measurement traceability.</p>
+<div class="badges">
+<span class="badge">✓ Calibration Certificates</span>
+<span class="badge">✓ On-Site Services</span>
+<span class="badge">✓ Traceable Equipment</span>
+</div>
+<div class="buttons">
+<a class="btn primary" href="tel:+923008019017">Call 0300 8019017</a>
+<a class="btn secondary" href="mailto:Calitest2003@gmail.com">Request a Quotation</a>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="section-title"><h2>About Calitest Laboratory</h2><p>Professional calibration support for organizations that depend on accurate measurement.</p></div>
+<div class="about-wrap">
+<div class="about"><strong>Established in 1999, Calitest Laboratory</strong> provides calibration services for a wide range of measuring and testing instruments. Our services are designed to help organizations maintain measurement accuracy, support quality requirements and keep calibration records properly documented. We also provide on-site calibration services where applicable.</div>
+<div class="stats">
+<div class="stat"><strong>1999</strong><span>Serving customers since</span></div>
+<div class="stat"><strong>25+</strong><span>Years of calibration experience</span></div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="section-title"><h2>Our Calibration Services</h2><p>Calibration support for a broad range of measuring instruments and equipment.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">⚙️</div><h3>Pressure Instruments</h3><p>Calibration support for pressure gauges and related pressure-measuring instruments.</p></div>
+<div class="card"><div class="icon">⚖️</div><h3>Weighing Instruments</h3><p>Calibration of weighing scales and other weighing equipment, subject to applicable range and capability.</p></div>
+<div class="card"><div class="icon">📏</div><h3>Dimensional Instruments</h3><p>Calibration support for measuring tapes and selected dimensional measuring equipment.</p></div>
+<div class="card"><div class="icon">🌡️</div><h3>Temperature Instruments</h3><p>Calibration services for applicable temperature-measuring instruments.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Electrical Instruments</h3><p>Calibration support for selected electrical and electronic measuring instruments.</p></div>
+<div class="card"><div class="icon">🔬</div><h3>Laboratory Equipment</h3><p>Calibration support for applicable laboratory and quality-control measuring equipment.</p></div>
+</div>
+</section>
+
+<section id="onsite">
+<div class="highlight">
+<h2>On-Site Calibration Services</h2>
+<p>Where practical and within our service capability, calibration can be performed at the customer's site, reducing equipment downtime and transportation requirements.</p>
+<div class="buttons" style="justify-content:center"><a class="btn primary" href="tel:+923008019017">Discuss Your Requirement</a></div>
+</div>
+</section>
+
+<section>
+<div class="section-title"><h2>Calibration Certificates & Traceability</h2><p>Clear documentation for your calibration records.</p></div>
+<div class="grid">
+<div class="card"><h3>Calibration Certificates</h3><p>Calibration documentation can include instrument identification, certificate number, calibration date, due date and relevant measurement results as applicable.</p></div>
+<div class="card"><h3>Traceability</h3><p>Our calibration equipment is maintained with traceability to an accredited laboratory, supporting documented measurement traceability.</p></div>
+<div class="card"><h3>Customer Records</h3><p>We can support customers in maintaining organized calibration records and schedules for their instruments.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="section-title"><h2>Contact Calitest Laboratory</h2><p>Send us your instrument details and calibration requirement for a quotation.</p></div>
+<div class="contact-grid">
+<div class="contact-box"><strong>Phone / WhatsApp</strong><a href="tel:+923008019017">0300 8019017</a><br><a href="tel:+923014195363">0301 4195363</a></div>
+<div class="contact-box"><strong>Email</strong><a href="mailto:Calitest2003@gmail.com">Calitest2003@gmail.com</a></div>
+<div class="contact-box"><strong>Email</strong><a href="mailto:calitest@cyber.net.pk">calitest@cyber.net.pk</a></div>
+<div class="contact-box"><strong>Address</strong><span>Available on request</span></div>
+</div>
+<div style="text-align:center;margin-top:28px"><a class="btn primary" href="mailto:Calitest2003@gmail.com?subject=Calibration%20Quotation%20Request">Request a Quotation</a></div>
+</section>
+</main>
+
+<footer>
+<p><strong>CALITEST LABORATORY</strong></p>
+<p>Established in 1999 • Professional Calibration Services • Precision • Reliability • Traceability</p>
+<p style="margin-top:8px">© 2026 Calitest Laboratory. All rights reserved.</p>
+</footer>
+</body>
+</html>
